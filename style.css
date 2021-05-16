@@ -48,4 +48,18 @@ img:hover {
 .margin-top {
   margin-top: 50px;
 }
+
+/**********************************************
+              **** M E D I A   Q U E R Y S   LE Z I O N E 55 ****
+                              === RESPONSIVE ===
+                **********************************************/
+@media only screen and (max-width: 667px) {
+  body h3 {
+    font-size: 1.2rem;
+    color: crimson;
+  }
+  body .container img {
+    height: 70px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
