@@ -61,5 +61,10 @@ img:hover {
   body .container img {
     height: 70px;
   }
+  body .reset-button button {
+    color: #ebdc0e;
+    background-color: #580970;
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
