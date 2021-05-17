@@ -56,14 +56,19 @@ img:hover {
 @media only screen and (max-width: 667px) {
   body h3 {
     font-size: 1.2rem;
-    color: crimson;
+    color: #14dc25;
   }
   body .container img {
     height: 70px;
   }
-  body .reset-button button {
-    color: #ebdc0e;
-    background-color: #580970;
+  body .reset-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #e4f311;
+    padding: 5px 15px;
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: #2b0cb3;
     font-size: 1.5rem;
   }
 }
