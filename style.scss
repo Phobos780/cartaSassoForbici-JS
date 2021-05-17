@@ -64,7 +64,7 @@ img:hover{
     body{
         h3{
             font-size: 1.2rem;
-            color: crimson;
+            color: rgb(20, 220, 37);
 
         }
 
@@ -72,11 +72,19 @@ img:hover{
             height: 70px;
         }
 
-        .reset-button button{
-            color: rgb(235, 220, 14);
-            background-color: rgb(88, 9, 112);
-            font-size: 1.5rem;
-        }
+        
+            .reset-button{
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(228, 243, 17);
+                padding: 5px 15px;
+                border: 3px solid red;
+                border-radius: 10px;
+                background-color: rgb(43, 12, 179);
+                font-size: 1.5rem;
+            }
+
+
         
     }
 }
