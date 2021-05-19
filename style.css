@@ -56,7 +56,10 @@ img:hover {
 @media only screen and (max-width: 667px) {
   body h3 {
     font-size: 1.2rem;
-    color: #14dc25;
+    color: #dc1414;
+  }
+  body h1 {
+    font-size: 1.5rem;
   }
   body .container img {
     height: 70px;
