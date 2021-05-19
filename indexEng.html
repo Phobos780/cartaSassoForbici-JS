@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Carta sasso forbici </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <div class="score-container">
+        <h3> Your score: <span id="player-score"> 0 </span></h3>
+        <h3> My score: <span id="cpu-score"> 0 </span></h3>
+    </div>
+    <div class="container">
+        <h1> Please make your choice</h1>
+        <img src="assets/sasso.png" width="100" height="100" alt="" data-name="sasso" class="user-choice">
+        <img src="assets/carta.png" width="100" height="100" alt="" data-name="carta" class="user-choice">
+        <img src="assets/forbice.png" width="100" height="100" alt="" data-name="forbice" class="user-choice">
+
+        <div id="computer-choice" class="margin-top">
+
+        </div>
+
+        <div class="margin-top">
+            <h3 id="result"> </h3>
+        </div>
+        <a class="reset-button" href="index.html"> RESET </a>
+    </div>
+    <script src="app.js">  </script>
+</body>
+</html>
