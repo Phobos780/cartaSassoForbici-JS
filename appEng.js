@@ -17,15 +17,15 @@ var cpuPick;
 
 var allOptions = [
   {
-    name: "sasso",
+    name: "stone",
     image: "assets/sasso.png"
   },
   {
-    name: "carta",
+    name: "paper",
     image: "assets/carta.png"
   },
   {
-    name: "forbice",
+    name: "scissors",
     image: "assets/forbice.png"
   }
 
@@ -41,7 +41,7 @@ function onUserPick() {/*con questa funzione registriamo la scelta del utente, c
   userPick = this.dataset.name;/* in pratica il ** THIS ** aquesisce il valore del evento che fa l'utente (come per esempio cliccare su un oggetto)(vedi lezione n12 di interazione tra js e html, corso base js )  */
   generateCpuPick();
   var cpuPickImage = "<img src='" + cpuPick.image + "' />";
-  var cpuPickText = "<h3> Il Computer ha scelto: " + cpuPick.name + "</h3>";
+  var cpuPickText = "<h3> I have chosen: " + cpuPick.name + "</h3>";
   /*come aggiungere un azzione dal JS verso HTML*/
   document.getElementById("computer-choice").innerHTML = cpuPickImage + cpuPickText; /*in questo modo andiamo a richiamare id del html chiamato "result" (lezione 16 corso base JS)*/
   document.getElementById("result").innerHTML = whoWon();/*grazie a questo getElementById andiamo peticamente a collegare il click del utente alla funzione whoWon */
@@ -56,33 +56,33 @@ function generateCpuPick(){
 
 function whoWon(){/*con questa funzione facciamo capire al pc qundo vince utente e quando vince user*/
       if (userPick==cpuPick.name) {
-        return "hai pareggiato";
+        return "you have balanced";
           }else {
-            if (userPick=="sasso") {
-            if (cpuPick.name=="forbice") {
+            if (userPick=="stone") {
+            if (cpuPick.name=="scissors") {
               score.userScore++;/*richiamiamo il nostro oggetto dichiarato prima*/
-              return "hai vinto";/*return ferma il proseguimento del codice se la condizione si è verifficata*/
+              return "you won!";/*return ferma il proseguimento del codice se la condizione si è verifficata*/
             }else {
               score.cpuScore++;
-              return "hai perso";
+              return "you lost";
             }
           }
-            if (userPick=="carta") {
-            if (cpuPick.name=="sasso") {
+            if (userPick=="paper") {
+            if (cpuPick.name=="stone") {
               score.userScore++;
-              return "hai vinto";
+              return "you won!";
             }else {
               score.cpuScore++;
-              return "hai perso";
+              return "you lost";
             }
           }
-            if (userPick=="forbice") {
-            if (cpuPick.name=="carta") {
+            if (userPick=="scissors") {
+            if (cpuPick.name=="paper") {
               score.userScore++;
-              return "hai vinto";
+              return "you won!";
             }else {
               score.cpuScore++;
-              return "hai perso";
+              return "you lost";
             }
           }
         }
