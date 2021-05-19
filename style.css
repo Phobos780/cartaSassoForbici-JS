@@ -13,18 +13,11 @@ body h3 {
   font-size: 1.5rem;
 }
 
-img {
+.container img {
   padding: 10px;
   height: 100px;
   width: auto;
   background-color: #ebdc0e;
-}
-
-img:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .score-container {
@@ -47,6 +40,11 @@ img:hover {
 
 .margin-top {
   margin-top: 50px;
+}
+
+.flag {
+  position: relative;
+  left: 150px;
 }
 
 /**********************************************
@@ -73,6 +71,15 @@ img:hover {
     border-radius: 10px;
     background-color: #2b0cb3;
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 667px) {
+  body img:hover {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    -webkit-transition: all 1s;
+    transition: all 1s;
   }
 }
 /*# sourceMappingURL=style.css.map */
