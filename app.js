@@ -40,7 +40,7 @@ function onUserPick() {/*con questa funzione registriamo la scelta del utente, c
   userPick = this.dataset.name;/* in pratica il ** THIS ** aquesisce il valore del evento che fa l'utente (come per esempio cliccare su un oggetto)(vedi lezione n12 di interazione tra js e html, corso base js )  */
   generateCpuPick();
   var cpuPickImage = "<img src='" + cpuPick.image + "' />";
-  var cpuPickText = "<h3> Il Computer ha scelto: " + cpuPick.name + "</h3>";
+  var cpuPickText = "<h3> Io ho scelto: " + cpuPick.name + "</h3>";
   /*come aggiungere un azzione dal JS verso HTML*/
   document.getElementById("computer-choice").innerHTML = cpuPickImage + cpuPickText; /*in questo modo andiamo a richiamare id del html chiamato "result" (lezione 16 corso base JS)*/
   document.getElementById("result").innerHTML = whoWon();/*grazie a questo getElementById andiamo peticamente a collegare il click del utente alla funzione whoWon */

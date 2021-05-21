@@ -76,9 +76,9 @@ body h3 {
     font-size: 1.5rem;
   }
   body .flag {
-    left: 160px;
+    left: 140px;
   }
-  body img:hover {
+  body .container img:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
     -webkit-transition: all 1s;
