@@ -36,12 +36,12 @@ body h3 {
     left: 0;
     font-size: 0.8rem;
     text-align: left;
-    margin-left: 3px;
+    margin-left: -1px;
 }
 
 .container{
     position: absolute;
-    top: 100px; 
+    top: 150px; 
     left: 0; 
     bottom: 0; 
     right: 0;
@@ -57,6 +57,7 @@ body h3 {
     
 }
 
+
                 /**********************************************
               **** M E D I A   Q U E R Y S   LE Z I O N E 55 ****
                               === RESPONSIVE ===
@@ -67,6 +68,7 @@ body h3 {
         h3{
             font-size: 1.2rem;
             color: rgb(220, 20, 20);
+            background-color: rgba(0, 0, 0, 0.2);
 
         }
 
@@ -91,9 +93,15 @@ body h3 {
             }
             
             .flag {
-                left: 155px;
+                left: 160px;
 
             }
+
+                img:hover{
+                    transform: scale(1.2);
+                    transition: all 1s;
+                }
+            
     }
 }
 
